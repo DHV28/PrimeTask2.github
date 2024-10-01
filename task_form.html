@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Details Form</title>
+    <link rel="stylesheet" href="task_form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+      <div class="banner-area">
+        <h1>Task Details Form</h1>
+      </div>
+  
+    <div class="form-container">
+        <form action="" id="task-details-form">
+        <div id="error-messages" ></div>
+            <div class="form-row">
+                <label for="task-name">Task Name:</label>
+                <input type="text" id="task-name" name="task-name" placeholder="Enter task name">
+            </div>
+    
+            <div class="form-row">
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" placeholder="Enter task description">
+            </div>
+    
+            <div class="form-row">
+                <label for="task-type">Task Type:</label>
+                <input type="text" id="task-type" name="task-type" placeholder="Enter task type (user story, bug)">
+            </div>
+    
+            <div class="form-row">
+                <label for="priority">Priority:</label>
+                <input type="text" id="priority" name="priority" placeholder="Enter priority level (low, medium, important, urgent)">
+            </div>
+    
+            <div class="form-row">
+                <label for="story-point">Story Point:</label>
+                <div class="box">
+                    <input type="range" class="range" min="0" max="10" value="0" steps="1" onmousemove="rangeSlider(this.value)">
+                    <span id="story-point">0</span>
+                </div>
+                <script>
+                    function rangeSlider(value){
+                        document.getElementById('story-point').innerHTML = value;
+                    }
+                </script>
+            </div>
+    
+            <div class="form-row">
+                <label for="project-stage">Project Stage:</label>
+                <input type="text" id="project-stage" name="project-stage" placeholder="Enter project stage (planning, development, testing, integration)">
+            </div>
+    
+            <div class="form-row">
+                <label for="tag">Tag:</label>
+                <input type="text" id="tag" name="tag" placeholder="Enter tag (front-end, back-end, API, UI/UX, framework, testing, database)">
+            </div>
+    
+            <div class="form-row">
+                <label>Assignees:</label>
+                <div class="dropdown">
+                    <select id="select-name" class="dropdown-select" >
+                        <option value="" disabled selected>Select name</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <button type="submit" id="done-button" class="done-button">Done</button>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+           <script type="module" src="task_form.js"></script>
+        </form>
+    </div>    
+</body>
+</html>

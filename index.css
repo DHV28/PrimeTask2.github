@@ -1,0 +1,250 @@
+.default-z-index {
+    z-index: 1;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: none;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.backlog {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    padding: 30px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+.tag {
+    display: inline-block;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.none {
+    background-color:#FDDA0D;
+    color: #000000;
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.sprint-box {
+    width: 100%; 
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color:#FDDA0D;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.sprint-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed-sprint {
+    background-color: rgba(123, 123, 123, 0.55);
+}
+
+.sprint-name{
+    font-size: 20px;
+    flex-grow: 1;
+}
+
+.normal-info{
+    width: 160px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.title-sprint-button{
+    width: 94px;
+    height: 35px;
+    margin-left: 40px;
+}
+
+.sprint-button{
+    width: 94px;
+    height: 35px;
+    margin-left: 40px;
+    background-color: #262626;
+}
+
+.inner-button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 20px;
+    color: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    transition: filter 0.3s ease; 
+}
+
+.container {
+    transition: filter 0.3s ease; 
+}
+
+#openFormBtn {
+    background-color: #a52220;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 170px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#openFormBtn:hover {
+    background-color: #d32f2f;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #e53935;
+    width: 300px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content p {
+    margin-bottom: 15px;
+}
+
+.modal-content label {
+    font-weight: bold;
+    color: #e53935;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.close {
+    color: #e53935;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #b71c1c;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content button {
+    background-color: #e53935;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.modal-content button:hover {
+    background-color: #d32f2f;
+  
+}
+
+.container.modal-active {
+    filter: blur(5px); 
+}
+
+.title-box{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #A50000;
+    color: #fff;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.banner-area {
+    background-image: url('images/deadpool_image.png'); 
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 140px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+ h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 0;
+}

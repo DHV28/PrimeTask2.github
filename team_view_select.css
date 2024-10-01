@@ -1,0 +1,144 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: none;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.main {
+    text-align: center;
+    margin-top: 15px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.view-selection {
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+}
+
+.selection-card {
+    background: linear-gradient(90deg, #ffcc00, #ff9900);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 278px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.selection-card:hover {
+    transform: scale(1.05);
+}
+
+.view-btn {
+    background: linear-gradient(90deg, #ffcc00, #ff9900);
+    color: #ffffff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav {
+    position: relative;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    padding-left: 4px;
+    padding-top: 2px;
+    position: relative;
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+#menu {
+    list-style-type: none;
+    padding-top: 30px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: #333333;
+    color: #FFFFFF;
+    transition: left 0.3s ease;
+    opacity: 0.95;
+}
+
+#menu li {
+    margin: 10px 0;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#menu.show {
+    left: 0;
+}
+
+.banner-area {
+    background-image: url('images/deadpool_image.png'); 
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 140px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+ h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 0;
+}

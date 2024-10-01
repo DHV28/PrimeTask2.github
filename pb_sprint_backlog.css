@@ -1,0 +1,228 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+    padding-bottom: 50px;
+}
+
+#menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.sprint-columns {
+    display: flex;
+    justify-content:space-between;
+    padding: 50px;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.column {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 650px;
+    height: 750px;
+    max-width: 48%; 
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 650px;
+}
+
+h2 {
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.task-row {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.task-card, .add-task {
+    background-color: #FDDA0D;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 80%;
+    box-sizing: border-box;
+    align-self: center;
+    max-width: 100%; 
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-name {
+    font-weight: bold;
+    flex-grow: 1;
+    font-size: 18px;
+}
+
+.priority {
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: black;
+    margin-right: 10px;
+    
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-info p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.task-info p span:first-of-type {
+    color: #333;
+    margin-right: 10px;
+    min-width: 90px;
+    text-align: left;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag {
+    display: inline-block;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.important {
+    background-color: #ff9800;
+    color: white;
+}
+
+.urgent {
+    background-color: #f44336;
+    color: white;
+}
+
+.medium {
+    background-color: #03a9f4;
+    color: white;
+}
+
+.low {
+    background-color: #4caf50;
+    color: white;
+}
+
+.front-end {
+    background-color: #ff7043;
+    color: white;
+    margin-right: 5px;
+}
+
+.back-end {
+    background-color: #5c6bc0;
+    color: white;
+    margin-right: 5px;
+}
+
+.api {
+    background-color: #26a69a;
+    color: white;
+    margin-right: 5px;
+}
+
+.ui-ux {
+    background-color: #ab47bc;
+    color: white;
+    margin-right: 5px;
+}
+
+.framework {
+    background-color: #8d6e63;
+    color: white;
+    margin-right: 5px;
+}
+
+.testing {
+    background-color: #006400;
+    color: white;
+    margin-right: 5px;
+}
+
+.database {
+    background-color: #00008B;
+    color: white;
+    margin-right: 5px;
+}
+
+.delete-icon {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 17px;
+}
+
+.banner-area {
+    background-image: url('images/deadpool_image.png'); 
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 140px;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+ h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 0;
+}

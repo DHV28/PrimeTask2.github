@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint Board</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navigator.css">
+</head>
+<body>
+    <div class="banner-area">
+        <h1>Sprint Board</h1>
+    </div>
+
+    <div id="menu-container"></div>
+        <script src="navigator.js"></script>
+        <script>
+            fetch('navigator.html')
+            .then(response=>response.text())
+            .then(data=>{
+                document.getElementById('menu-container').innerHTML=data;
+            });
+        </script>
+
+    <div class="container">
+        <button id="openFormBtn">Create Sprint</button>
+
+        <div class="backlog" id="backlog"></div>
+    </div>
+
+    <div id="sprintModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <p>
+                    <label for="sprintName">Sprint Name:</label>
+                    <input type="text" name="sprintName" id="sprintName" placeholder="Enter sprint name" required />
+                </p>
+                <p>
+                    <label for="startDate">Start Date:</label>
+                    <input type="date" name="startDate" id="startDate" required />
+                </p>
+                <p>
+                    <label for="endDate">End Date:</label>
+                    <input type="date" name="endDate" id="endDate" required />
+                </p>
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+        </div>
+    
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

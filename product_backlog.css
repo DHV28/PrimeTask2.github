@@ -1,0 +1,429 @@
+.default-z-index {
+    z-index: 1;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: none;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.backlog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.task-card, .add-task {
+    background-color: #FDDA0D;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.task-name {
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.priority {
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: black;
+    margin-right: 15px;
+}
+
+.edit-icon {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.task-info p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.task-info p span:first-of-type {
+    min-width: 70px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+.tag {
+    display: inline-block;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.important {
+    background-color: #ff9800;
+    color: white;
+}
+
+.urgent {
+    background-color: #f44336;
+    color: white;
+}
+
+.medium {
+    background-color: #03a9f4;
+    color: white;
+}
+
+.low {
+    background-color: #4caf50;
+    color: white;
+}
+
+.tag {
+    display: inline-block;
+    color: black;
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.front-end {
+    background-color: #ff7043;
+    color: white;
+}
+
+.back-end {
+    background-color: #5c6bc0;
+    color: white;
+}
+
+.api {
+    background-color: #26a69a;
+    color: white;
+}
+
+.ui-ux {
+    background-color: #ab47bc;
+    color: white;
+}
+
+.framework {
+    background-color: #8d6e63;
+    color: white;
+}
+
+.testing {
+    background-color: #006400;
+    color: white;
+}
+
+.database {
+    background-color: #00008B;
+    color: white;
+}
+
+.delete-icon {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 17px;
+}
+
+.add-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(123, 123, 123);
+    border-radius: 10px;
+    min-height: 150px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+}
+
+.add-button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+.add-task:hover {
+    background-color: #262626;
+}
+
+.add-task a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
+    height: 100%; 
+    text-decoration: none; 
+    color: inherit;  
+}
+
+.add-button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+.add-button:hover {
+    color: white;
+}
+
+.add-button i {
+    color: white;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.3s ease;
+    width: auto;
+    min-width: 20ch;
+}
+
+.dropdown-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.caret {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 10px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.dropdown.active .caret {
+    transform: rotate(-135deg);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+    max-height: 350px;
+}
+
+.dropdown-content li {
+    padding: 10px 15px;
+    list-style: none;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.dropdown-content li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-content li.selected {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/*Added new css for filtering*/
+.filter-dropdown {
+    position: relative;
+}
+
+.filter-dropdown-btn {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.3s ease;
+    width: auto;
+    min-width: 20ch;
+}
+
+.filter-dropdown-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.filter-dropdown.active .caret {
+    transform: rotate(-135deg);
+}
+
+.filter-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.filter-dropdown.active .filter-dropdown-content {
+    display: block;
+    max-height: 350px;
+}
+
+.filter-dropdown-content li {
+    padding: 10px 15px;
+    list-style: none;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.filter-dropdown-content li:hover {
+    background-color: #f0f0f0;
+}
+
+.filter-dropdown-content li.selected {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.none {
+    background-color:#FDDA0D;
+    color: #000000;
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.banner-area {
+    background-image: url('images/deadpool_image.png'); 
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 140px;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+ h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 0;
+}

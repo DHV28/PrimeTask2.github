@@ -1,0 +1,310 @@
+.default-z-index {
+    z-index: 1;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto; 
+    padding: 0;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: none;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.backlog {
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+
+.member-box{
+    width: 100%; 
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color:#FDDA0D;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.member-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.member-name{
+    font-size: 17px;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.average-time {
+    font-size: 17px;
+    margin-right: 500px;
+    min-width: 100px;
+    text-align: left;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    margin-right: 30px;
+}
+
+.actions i {
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
+    
+}
+
+.actions i:hover {
+    color: #555;
+}
+
+.fa-pencil {
+    cursor: pointer;
+    color: #000;
+}
+
+.fa-pencil:hover {
+    color: #555;
+}
+
+.btn {
+    position: absolute;
+    top: -35px;
+    right: -50px;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+    outline: none;
+    border: 3px solid #000000;
+    background-color: #ff0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2),
+                0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #ff4d4d;
+    transform: translateY(-2px);
+}
+
+.cross-icon {
+    color: #000000;
+    font-size: 1.5em;
+    transition: color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.cross-icon:hover {
+    color: #333333;
+    transform: scale(1.1);
+}
+
+.btn::before {
+    position: absolute;
+    content: '';
+    height: 2.5em;
+    width: 2.5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: inherit;
+    background: linear-gradient(145deg, #ff0000, #ff4d4d);
+    z-index: -1;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup h2 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.popup .close {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+.popup button {
+    background-color: #A50000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto; 
+}
+
+.popup button:hover {
+    background-color: #000;
+}
+
+.task-card {
+    background-color: #FDDA0D;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.task-card-list ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-name {
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.priority {
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    justify-self: left;
+}
+
+.priority.urgent {
+    background-color: #f44336;
+}
+
+.priority.medium {
+    background-color: #ff9800;
+}
+
+.priority.low {
+    background-color: #4caf50;
+}
+
+.priority.important {
+    background-color: #ff9800;
+}
+
+.tag {
+    display: inline-block;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.front-end { background-color: #ff7043; }
+.back-end { background-color: #5c6bc0; }
+.api { background-color: #26a69a; }
+.ui-ux { background-color: #ab47bc; }
+.framework { background-color: #8d6e63; }
+.testing { background-color: #006400; }
+.database { background-color: #00008B; }
+
+.banner-area {
+    background-image: url('images/deadpool_image.png'); 
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 140px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+ h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 0;
+    background-color: #A50000;
+    padding: 15px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint Board</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="choose_date_form.css">
+    <link rel="stylesheet" href="navigator.css">
+</head>
+<body>
+    <div class="banner-area">
+        <h1>Team Dashboard View</h1>
+    </div>
+
+    <div id="menu-container"></div>
+    <script src="navigator.js"></script>
+    <script>
+        fetch('navigator.html')
+        .then(response=>response.text())
+        .then(data=>{
+            document.getElementById('menu-container').innerHTML=data;
+        });
+    </script>
+
+    <div class="container">
+        <div class="sprint-form-container">
+            <form id="sprint-form">
+                <div class="date-container">
+                    <p>
+                        <label for="startDate">Start Date:</label>
+                        <input type="date" name="startDate" id="startDate" required />
+                    </p>
+                    <p>
+                        <label for="endDate">End Date:</label>
+                        <input type="date" name="endDate" id="endDate" required />
+                    </p>
+                </div>
+                <button type="submit" id="done-button">Done</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="choose_date_form.js"></script>
+</body>
+</html>

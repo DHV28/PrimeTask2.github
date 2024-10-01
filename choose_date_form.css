@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.sprint-form-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 30px; 
+    max-width: 600px; 
+    margin: 40px auto; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.sprint-form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.sprint-form-container .date-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    gap: 20px; 
+    margin-bottom: 20px;
+}
+
+.sprint-form-container .date-container p {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.sprint-form-container label {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.sprint-form-container input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; 
+}
+
+.sprint-form-container button {
+    background-color: #A50000;
+    color: white;
+    padding: 12px 20px; 
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 150px;
+}
+
+.sprint-form-container button:hover {
+    background-color: #d32f2f;
+}
+
+.banner-area {
+    background-image: url('images/deadpool_image.png'); 
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 140px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+ h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 0;
+}

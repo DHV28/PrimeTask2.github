@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="admin_login.css">
+</head>
+<body>
+    <main id="main-holder">
+        <h1 id="login-header">Admin Login</h1>
+        <h3 id="login-subheader">Please enter your details.</h3>
+
+        <div id="login-error-msg-holder">
+            <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+        </div>
+
+        <div class="login-form-container">
+            <form id="login-form">
+                <label for = "username-field" class = "input-label" >Username:</label>
+                <hr>
+                <input type="username" name="username" id="username-field" class="login-form-field" placeholder="  Enter your username">
+                <hr>
+                <label for = "password-field" class = "input-label" >Password:</label>
+                <hr>
+                <input type="password" name="password" id="password-field" class="login-form-field" placeholder="  ************">
+                <hr>
+                <input type="submit" value="Login" id="login-form-submit">
+            </form>
+        </div>
+    </main>
+    <script type="module" src="admin_login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+</body>
+</html>

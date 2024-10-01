@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Details Form</title>
+    <link rel="stylesheet" href="log_time_form_view.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="banner-area">
+        <h1>Task Details</h1>
+    </div>
+
+    <div class="form-container">
+        <form>
+            <div class="form-row">
+                <label for="task-name">Task Name:</label>
+                <div class="field-box">
+                    <span class="field-text">
+                        <p id="name-of-task"></p>
+                    </span>
+                </div>
+            </div>
+    
+            <div class="form-row">
+                <label for="description">Description:</label>
+                <div class="field-box">
+                    <span class="field-text">
+                        <p id="description-of-task"></p>
+                    </span>
+                </div>
+            </div>
+    
+            <div class="form-row">
+                <label for="task-type">Task Type:</label>
+                <div class="field-box">
+                    <span class="field-text">
+                        <p id="type-of-task"></p>
+                    </span>
+                </div>
+            </div>
+    
+            <div class="form-row">
+                <label for="priority">Priority:</label>
+                <div class="field-box">
+                    <span class="field-text">
+                        <p id="priority-of-task"></p>
+                    </span>
+                </div>
+            </div>
+    
+            <div class="form-row">
+                <label for="story-point">Story Point:</label>
+                <div class="field-box">
+                    <span class="field-text">
+                        <p id="story-point-of-task"></p>
+                    </span>
+                </div>
+                
+            </div>
+    
+            <div class="form-row">
+                <label for="project-stage">Project Stage:</label>
+                <div class="field-box">
+                    <span class="field-text">
+                        <p id="project-stage-of-task"></p>
+                    </span>
+                </div>
+            </div>
+    
+            <div class="form-row">
+                <label for="tag">Tag:</label>
+                <div class="field-box">
+                    <span class="field-text">
+                        <p id="tag-of-task"></p>
+                    </span>
+                </div>
+            </div>
+    
+            <div class="form-row">
+                <label>Assignees:</label>
+                <div class="field-box">
+                    <span class="field-text">
+                        <p id="assignees-of-task"></p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="status">Status:</label>
+                <div class="field-box">
+                    <span class="field-text">
+                        <p id="status-of-task"></p>
+                    </span>
+                </div>
+            </div> 
+
+            <div class="form-row">
+                <label for="log-time">Log Time Spent:</label>
+                <span>Recently Logged Time: </span>
+                <span class="field-text">
+                    <p id="log-time-hr"></p>
+                </span>
+                <span class="field-unit"> hr</span>
+                <span>&nbsp;</span>
+                <span class="field-text">
+                    <p id="log-time-min"></p>
+                </span>
+                <span class="field-unit"> min</span>
+                <span>&emsp;&emsp;</span>
+                <span>Accumulated Time:</span>
+                <span class="field-text">
+                    <p id="accumulated-time-hr"></p>
+                </span>
+                <span class="field-unit"> hr</span>
+                <span>&nbsp;</span>
+                <span class="field-text"></span>
+                    <p id="accumulated-time-min"></p>
+                </span>
+                <span class="field-unit"> min</span>
+            </div>
+    
+            <a href="sprint_backlog.html">
+                <div class="form-row">
+                    <button type="button" id="done-button" class="done-button">Done</button>
+                </div>  
+            </a>  
+
+           <script type="module" src="log_time_form_view.js"></script>
+        </form>
+    </div>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+</body>
+</html>
